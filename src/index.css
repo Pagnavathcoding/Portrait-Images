@@ -1,0 +1,379 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Mukta", sans-serif;
+}
+
+body {
+  background: #d7e9f7;
+}
+
+p {
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+main header {
+  width: 100%;
+  height: 50vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(./Images/background.jpg) no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./Images/background.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+main header h1 {
+  font-size: 30px;
+  color: #61dafb;
+  padding-bottom: 1em;
+}
+
+main header .search {
+  padding: 1em;
+  background: #fff;
+  border-radius: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 0.01em solid #c2c2c2;
+}
+
+main header .search input {
+  width: 50vw;
+  height: 30px;
+  border: none;
+  outline: none;
+  padding: 0 1em;
+  font-size: 18px;
+  background: none;
+  color: #0a1b1d;
+}
+
+main header .search input::-webkit-input-placeholder {
+  color: #0a1b1d;
+}
+
+main header .search button {
+  width: 50px;
+  height: 30px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  background: none;
+  cursor: pointer;
+}
+
+main .title {
+  width: 100%;
+  padding: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+main .title .search-infos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 2em;
+}
+
+main .title .search-infos h1 {
+  font-size: 18px;
+}
+
+main .title .search-infos p {
+  margin-left: 0.5em;
+}
+
+main .title .slide-show {
+  margin: 0 2em;
+}
+
+main .title .slide-show button {
+  width: 140px;
+  height: 40px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+  background: #0a1b1d;
+  color: #fff;
+  border-radius: 40px;
+}
+
+main .slide {
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  z-index: 10;
+}
+
+main .slide .slide-image img {
+  height: 600px;
+  border-radius: 5px;
+}
+
+main .slide .counter {
+  position: absolute;
+  top: 1em;
+  left: 1em;
+}
+
+main .slide .counter p {
+  color: #fff;
+}
+
+main .slide .left button,
+main .slide .right button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #0080bf;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  margin-right: 1em;
+  border: none;
+  outline: none;
+  border: 0.1em solid #fff;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+main .slide .left button:active,
+main .slide .right button:active {
+  background: #0a1b1d;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+main .slide .left button img,
+main .slide .right button img {
+  height: 40px;
+}
+
+main .slide .right button {
+  margin-right: 0;
+  margin-left: 1em;
+}
+
+main .slide .close {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  cursor: pointer;
+}
+
+main .container {
+  width: 100%;
+  padding: 1em 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main .container .image {
+  padding: 1em;
+}
+
+main .container .image img {
+  border-radius: 5px;
+  height: 400px;
+}
+
+main .page {
+  width: 100%;
+  padding: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .page a {
+  text-decoration: none;
+  color: #fff;
+}
+
+main .page button {
+  width: 120px;
+  height: 40px;
+  border-radius: 40px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: #0a1b1d;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 1em;
+  font-size: 16px;
+  text-align: center;
+}
+
+main .page button img {
+  height: 30px;
+}
+
+main .page p {
+  padding: 0 2em;
+}
+
+main footer {
+  width: 100%;
+  padding: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  background: #0a1b1d;
+  color: #c2c2c2;
+}
+
+main footer a {
+  text-decoration: none;
+  color: #61dafb;
+}
+
+main .top {
+  position: fixed;
+  right: 1em;
+  bottom: 1em;
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+
+main .top button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  background: #0a1b1d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  border: 0.1em solid #fff;
+  cursor: pointer;
+}
+
+@media (max-width: 700px) {
+  main header .search {
+    width: 80vw;
+  }
+  main header .search input {
+    width: 80vh;
+  }
+  main .slide {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  main .slide .slide-image img {
+    width: 350px;
+    height: 500px;
+  }
+  main .slide .left {
+    margin: 0.5em 0 0 0;
+  }
+  main .slide .right {
+    margin: 0 0 1em 0;
+  }
+  main .top {
+    right: 0.5em;
+    bottom: 0.5em;
+  }
+  main .container .image img {
+    height: 250px;
+  }
+}
+/*# sourceMappingURL=index.css.map */
